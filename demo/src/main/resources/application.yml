@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    driver-class-name: org.postgresql.Driver
+    username: demo
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create  # Options: none, validate, update, create, create-drop
+    show-sql: true
